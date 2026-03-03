@@ -1,0 +1,14 @@
+name: CratePlugin
+version: ${version}
+main: io.github.yourname.crates.CratePlugin
+api-version: "1.21"
+author: you
+description: Simple crate plugin with keys, placed crates via command, and animated GUI.
+commands:
+  crates:
+    description: Crate admin command
+    usage: /crates <reload|set|remove|givekey>
+    permission: crates.admin
+permissions:
+  crates.admin:
+    default: op

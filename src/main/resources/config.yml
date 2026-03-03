@@ -1,0 +1,34 @@
+# Crate definitions. Keys and crates match by crate id.
+crates:
+  basic:
+    block: PURPLE_SHULKER_BOX
+    gui:
+      title: "&dBasic Crate"
+      size: 27
+    animation:
+      ticks: 60       # total ticks the animation runs
+      interval: 2     # update interval in ticks
+      finalSlot: 13   # slot to display the rolling item (0-26)
+    key:
+      material: TRIPWIRE_HOOK
+      name: "&dBasic Key"
+      lore:
+        - "&7Use this on a Basic Crate"
+    loot:
+      - weight: 60
+        item:
+          material: DIAMOND
+          amount: 8
+          name: "&bDiamonds"
+          lore:
+            - "&7Lucky!"
+      - weight: 30
+        item:
+          material: GOLD_INGOT
+          amount: 16
+          name: "&6Gold"
+      - weight: 10
+        item:
+          material: NETHERITE_INGOT
+          amount: 1
+          name: "&8Netherite"
