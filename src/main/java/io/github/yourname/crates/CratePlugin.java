@@ -31,7 +31,7 @@ public final class CratePlugin extends JavaPlugin {
 
         Bukkit.getPluginManager().registerEvents(new CrateInteractListener(this, crateManager, sessionManager), this);
         Bukkit.getPluginManager().registerEvents(new GuiListener(sessionManager), this);
-        Bukkit.getPluginManager().registerEvents(new CrateProtectionListener(crateManager, sessionManager, pendingRewardManager), this);
+        Bukkit.getPluginManager().registerEvents(new CrateProtectionListener(this, crateManager, sessionManager, pendingRewardManager), this);
     }
 
     @Override

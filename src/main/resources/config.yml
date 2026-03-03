@@ -6,9 +6,9 @@ crates:
       title: "&dBasic Crate"
       size: 27
     animation:
-      ticks: 60       # total ticks the animation runs
-      interval: 2     # update interval in ticks
-      finalSlot: 13   # slot to display the rolling item (0-26)
+      ticks: 80       # total duration (higher = longer animation)
+      interval: 3     # base reel speed (higher = slower from start to finish)
+      finalSlot: 13   # unused by 7-slot reel, kept for backward compatibility
     key:
       material: TRIPWIRE_HOOK
       name: "&dBasic Key"
